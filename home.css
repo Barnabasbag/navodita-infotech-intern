@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #de3e3e;
+    background-color: #000000;
+    background-image: url('silhouette-young-man-dark-room_893012-88239.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container-fluid {
+    border: 2px solid #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: #D2042D;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.header p {
+    margin: 0;
+    font-size: 14px;
+    color: #D2042D;
+}
+
+.main-content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #D2042D;
+}
+
+.main-content p {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #D2042D;
+}
+
+.buttons .btn {
+    margin-right: 10px;
+}
+
+.footer .nav-link {
+    color: #D2042D;
+    font-size: 24px;
+}
+
+.footer .nav-link:hover {
+    color: #fff;
+}
+
+.intro h1, .intro p {
+    color: #D2042D;
+}
+
+.border-white {
+    border: 2px solid #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 36px;
+    }
+
+    .main-content p {
+        font-size: 18px;
+    }
+
+    .footer .nav-link {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.container-fluid {
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    color: #D2042D;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.header p {
+    margin: 0;
+    font-size: 14px;
+    color: #D2042D;
+}
+
+.main-content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #D2042D;
+}
+
+.main-content p {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #D2042D;
+}
+
+.content-section {
+    margin: 20px 0;
+}
+
+.content-section h2 {
+    color: #D2042D;
+}
+
+.content-section p, .content-section ul, .content-section blockquote {
+    color: #ffffff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #D2042D;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container.left {
+    left: 0;
+}
+
+.container.right {
+    left: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #ffffff;
+    border: 4px solid #D2042D;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.container.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: #D2042D;
+    position: relative;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.container.left .content {
+    margin-left: 0;
+}
+
+.container.right .content {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    .container.left, .container.right {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container.left::after, .container.right::after {
+        left: 60px;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.footer .nav-link {
+    color: #D2042D;
+    font-size: 24px;
+}
+
+.footer .nav-link:hover {
+    color: #fff;
+}
+
+.border-white {
+    border: 2px solid #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}

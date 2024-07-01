@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    background-image: url('Premium Vector Abstract black background with red shiny line.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #D2042D;
+}
+
+.container-fluid {
+    border: 2px solid #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.resume-header h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.resume-container iframe {
+    width: 900px;
+    height: 1500px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.footer .nav-link {
+    color: #D2042D;
+    font-size: 24px;
+}
+
+.footer .nav-link:hover {
+    color: #fff;
+}
+
+.border-white {
+    border: 2px solid #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .resume-header h1 {
+        font-size: 36px;
+    }
+
+    .resume-container iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    .footer .nav-link {
+        font-size: 20px;
+    }
+}
